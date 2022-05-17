@@ -26,8 +26,8 @@ function draw() {
   
   translate(width/2, height/2);
   for(var i = 0; i< NUM_LINES ; i++){
-    stroke(sin((t+i)/100)*127,sin((t/2+i)/100)*127,sin((t/4+i)/100)*127);
+    stroke(sin((t+i)/50)*127+127,sin((t/2+i)/50)*127+127,sin((t/4+i)/50)*127)+127;
     line(x1(t+i),y1(t+i), x2(t+i), y2(t+i));
   }
-  t+=0.5;
+  t+=1;
 }
